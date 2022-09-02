@@ -58,6 +58,6 @@ def sensor_log(log_recv_sec,n_hour) :
             client.send(bytes('데이터 전송 완료 : '+data[:-1], 'utf-8'))
 
 #온습도 센서 로그 기록
-sensor_log(10,30)
+sensor_log(10,30) # 왼쪽: 센서값 확인 간격(초)/ 오른쪽 파일 저장 간격(초)
 
 client.close()
